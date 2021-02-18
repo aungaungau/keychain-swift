@@ -44,6 +44,8 @@ public enum KeychainSwiftAccessOptions {
   
   */
   case accessibleAfterFirstUnlockThisDeviceOnly
+  
+  case accessibleAccessibleAlways
 
   /**
   
@@ -74,6 +76,9 @@ public enum KeychainSwiftAccessOptions {
       
     case .accessibleWhenPasscodeSetThisDeviceOnly:
       return toString(kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly)
+      
+    case .accessibleAccessibleAlways:
+      return toString(kSecAttrAccessibleAlways)
     }
   }
   
